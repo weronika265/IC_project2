@@ -1,0 +1,27 @@
+{
+  "canisters": {
+    "projekt2_backend": {
+      "candid": "src/projekt2_backend/projekt2_backend.did",
+      "package": "projekt2_backend",
+      "type": "rust"
+    },
+    "projekt2_frontend": {
+      "dependencies": [
+        "projekt2_backend"
+      ],
+      "source": [
+        "src/projekt2_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "projekt2_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
